@@ -2,9 +2,15 @@
 /* =================================== */
 /*	Basic Style 
 /* =================================== */
-
+/* Color Scheme */
+/* Primary: #EAD2A8 Beige
+   Monochromatic: #95866b Light Brown
+   Mono 40% #8c7e65 Medium Brown
+   Mono 50%: #5e5443 Dark Brown
+   Complementary: #a8c0ea Blue
+*/
 body {
-    background-color: #fff;
+    background-color: #f2e4cb;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     line-height: 21px;
 	font-size: 13px;
@@ -41,7 +47,7 @@ a, a:focus, a:hover {
 }
 
 a:focus, a:hover {
-    color: #6CB670;
+    color: #5e5443;
 }
 
 h1, h2, h3,
@@ -70,8 +76,10 @@ h4, h5, h6 {
    *zoom: 1;
 }
 
-span.color {
-	color: #FFBBA0;
+.color {
+	color: #F9EED9
+  /* #FFBBA0; */
+  
 }
 
 body > section,
@@ -82,7 +90,7 @@ body > section,
 .sec-title {}
 
 .sec-title h2 {
-  color: #0eb493;
+  color: #5e5443;
   font-size: 28px;
   font-weight: 800;
   text-transform: uppercase;
@@ -147,15 +155,16 @@ body > section,
 ==========================================*/
 
 #navigation {
-  background-color: rgba(16, 22, 54, 0.2);
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  /* background-color: #95866b99 !important; */
   border: 0 none;
   margin: 0;
   
-    -webkit-transition: background-color 800ms linear;
+    /* -webkit-transition: background-color 800ms linear;
        -moz-transition: background-color 800ms linear;
 	    -ms-transition: background-color 800ms linear;
          -o-transition: background-color 800ms linear;
-			transition: background-color 800ms linear;
+			transition: background-color 800ms linear; */
 }
 
 .navbar-toggle i {
@@ -174,8 +183,12 @@ body > section,
 .navbar-nav li a:focus,
 .navbar-nav li a:hover {
 	background-color: transparent;
-	border-top: 1px solid #32B0EE;
+	border-top: 1px solid ##5e5443;
 	color: #fff;
+}
+
+.name {
+  font-size: 4.5rem;
 }
 
 
@@ -309,9 +322,9 @@ top: -8px;
 }
 
 .service-icon {
-  border: 1px solid #0eb493;
+  border: 1px solid #95866b;
   border-radius: 50%;
-  color: #0eb493;
+  color: #5e5443;
   float: left;
   padding: 10px 13px;
 }
@@ -323,7 +336,7 @@ top: -8px;
 }
 
 .service-desc h3 {
-  color: #062033;
+  color: #8c7e65;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 25px;
@@ -356,7 +369,7 @@ top: -8px;
 
 .work-filter ul li a:hover,
 .work-filter ul li a.active {
-  background-color: #0eb493;
+  background-color: #8c7e65;
   border-radius: 6px;
   color: #fff;
   padding: 5px 17px;
@@ -379,7 +392,7 @@ top: -8px;
 }
 
 .overlay {
-	background-color: rgba(14,180,147,.9);
+	background-color: #95866b;
 	text-align: center;
 	position: absolute;
 	left: 0;
@@ -483,7 +496,7 @@ top: -8px;
 }
 
 .team-member:hover h4 {
-  color: #0eb493;
+  color: #95866b;
 }
 
 .team-member .social-links {
@@ -491,7 +504,7 @@ top: -8px;
 }
 
 .team-member .social-links li a {
-  background-color: #0d7c67;
+  background-color: #95866b;
   color: #fff;
   height: 42px;
   padding: 10px 0 0;
@@ -640,10 +653,6 @@ label.error {
   margin-bottom: 10px;
 }
 
-#map_canvas {
-  height: 215px;
-  width: 100%;
-}
 
 
 
@@ -653,7 +662,7 @@ label.error {
 
 
 .footer {
-  background-color: #1ea78d;
+  background-color: #95866b;
   border-top: 5px solid #062033;
   color: #fff;
 }
